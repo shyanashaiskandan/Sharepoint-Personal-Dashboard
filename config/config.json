@@ -9,10 +9,19 @@
           "manifest": "./src/webparts/calendar/CalendarWebPart.manifest.json"
         }
       ]
+    },
+    "meeting-notification-application-customizer": {
+      "components": [
+        {
+          "entrypoint": "./lib/extensions/meetingNotification/MeetingNotificationApplicationCustomizer.js",
+          "manifest": "./src/extensions/meetingNotification/MeetingNotificationApplicationCustomizer.manifest.json"
+        }
+      ]
     }
   },
   "externals": {},
   "localizedResources": {
-    "CalendarWebPartStrings": "lib/webparts/calendar/loc/{locale}.js"
+    "CalendarWebPartStrings": "lib/webparts/calendar/loc/{locale}.js",
+    "MeetingNotificationApplicationCustomizerStrings": "lib/extensions/meetingNotification/loc/{locale}.js"
   }
 }
