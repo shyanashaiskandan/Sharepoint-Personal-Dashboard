@@ -2,6 +2,7 @@ import * as React from 'react';
 import styles from './Calendar.module.scss';
 import type { ICalendarProps } from './ICalendarProps';
 import { MSGraphClientV3 } from '@microsoft/sp-http';
+import {Icon} from "@fluentui/react"
 
 export default class Calendar extends React.Component<ICalendarProps, { meetings: any[] }> {
   constructor(props: ICalendarProps) {
@@ -36,6 +37,7 @@ export default class Calendar extends React.Component<ICalendarProps, { meetings
   public render(): React.ReactElement<ICalendarProps> {
     return (
       <section className={styles.calendar}>
+        <Icon iconName="Calendar" />
         <h3>Upcoming Meetings (next 24h)</h3>
         {this.state.meetings.length === 0 && <div>No meetings found.</div>}
         <ul>
