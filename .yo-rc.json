@@ -1,7 +1,7 @@
 {
   "@microsoft/generator-sharepoint": {
     "plusBeta": false,
-    "isCreatingSolution": true,
+    "isCreatingSolution": false,
     "nodeVersion": "22.19.0",
     "sdksVersions": {},
     "version": "1.21.1",
@@ -13,6 +13,7 @@
     "solutionShortDescription": "sharepoint-personal-dashboard description",
     "skipFeatureDeployment": true,
     "isDomainIsolated": false,
-    "componentType": "webpart"
+    "componentType": "extension",
+    "extensionType": "ApplicationCustomizer"
   }
 }

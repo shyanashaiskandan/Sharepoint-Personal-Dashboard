@@ -30,7 +30,13 @@
         "title": "sharepoint-personal-dashboard Feature",
         "description": "The feature that activates elements of the sharepoint-personal-dashboard solution.",
         "id": "72964c3d-e799-4d1e-a893-aa8f8a9a7f0a",
-        "version": "1.0.0.0"
+        "version": "1.0.0.0",
+        "assets": {
+          "elementManifests": [
+            "elements.xml",
+            "ClientSideInstance.xml"
+          ]
+        }
       }
     ],
     "webApiPermissionRequests": [

@@ -2,5 +2,29 @@
   "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/spfx-serve.schema.json",
   "port": 4321,
   "https": true,
-  "initialPage": "https://shyanatest.sharepoint.com/sites/ShyanaTest/_layouts/workbench.aspx"
+  "initialPage": "https://shyanatest.sharepoint.com/sites/ShyanaTest/_layouts/workbench.aspx",
+  "serveConfigurations": {
+    "default": {
+      "pageUrl": "https://shyanatest.sharepoint.com/sites/ShyanaTest/SitePages/Home.aspx",
+      "customActions": {
+        "cf89368e-f157-410d-a5da-17da0120a470": {
+          "location": "ClientSideExtension.ApplicationCustomizer",
+          "properties": {
+            "testMessage": "Test message"
+          }
+        }
+      }
+    },
+    "meetingNotification": {
+      "pageUrl": "https://shyanatest.sharepoint.com/sites/ShyanaTest/SitePages/Home.aspx",
+      "customActions": {
+        "cf89368e-f157-410d-a5da-17da0120a470": {
+          "location": "ClientSideExtension.ApplicationCustomizer",
+          "properties": {
+            "testMessage": "Test message"
+          }
+        }
+      }
+    }
+  }
 }
