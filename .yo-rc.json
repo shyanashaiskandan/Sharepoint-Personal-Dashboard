@@ -1,0 +1,18 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "nodeVersion": "22.19.0",
+    "sdksVersions": {},
+    "version": "1.21.1",
+    "libraryName": "sharepoint-personal-dashboard",
+    "libraryId": "a64da0ac-4464-4df0-8218-7a91575d1372",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "sharepoint-personal-dashboard",
+    "solutionShortDescription": "sharepoint-personal-dashboard description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "webpart"
+  }
+}

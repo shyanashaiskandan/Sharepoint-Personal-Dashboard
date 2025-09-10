@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "sharepoint-personal-dashboard-client-side-solution",
+    "id": "a64da0ac-4464-4df0-8218-7a91575d1372",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.21.1"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "sharepoint-personal-dashboard description"
+      },
+      "longDescription": {
+        "default": "sharepoint-personal-dashboard description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "sharepoint-personal-dashboard Feature",
+        "description": "The feature that activates elements of the sharepoint-personal-dashboard solution.",
+        "id": "72964c3d-e799-4d1e-a893-aa8f8a9a7f0a",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/sharepoint-personal-dashboard.sppkg"
+  }
+}
