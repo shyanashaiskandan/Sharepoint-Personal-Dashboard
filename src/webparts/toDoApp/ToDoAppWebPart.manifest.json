@@ -1,7 +1,7 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-web-part-manifest.schema.json",
-  "id": "c01872ad-5050-4459-b8ed-1814602a2ba5",
-  "alias": "CalendarWebPart",
+  "id": "51fdc8cc-22a5-4867-9a10-62b6f1500388",
+  "alias": "ToDoAppWebPart",
   "componentType": "WebPart",
 
   "version": "*",
@@ -12,13 +12,13 @@
   "supportsThemeVariants": true,
 
   "preconfiguredEntries": [{
-    "groupId": "5c03119e-3074-46fd-976b-c60198311f70",
+    "groupId": "5c03119e-3074-46fd-976b-c60198311f70", 
     "group": { "default": "Advanced" },
-    "title": { "default": "Calendar" },
-    "description": { "default": "Calendar description" },
+    "title": { "default": "ToDoApp" },
+    "description": { "default": "ToDoApp description" },
     "officeFabricIconFontName": "Page",
     "properties": {
-      "description": "Calendar"
+      "description": "ToDoApp"
     }
   }]
 }

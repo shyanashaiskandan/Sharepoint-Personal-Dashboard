@@ -13,7 +13,6 @@
     "solutionShortDescription": "sharepoint-personal-dashboard description",
     "skipFeatureDeployment": true,
     "isDomainIsolated": false,
-    "componentType": "extension",
-    "extensionType": "ApplicationCustomizer"
+    "componentType": "webpart"
   }
 }

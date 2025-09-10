@@ -17,11 +17,20 @@
           "manifest": "./src/extensions/meetingNotification/MeetingNotificationApplicationCustomizer.manifest.json"
         }
       ]
+    },
+    "to-do-app-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/toDoApp/ToDoAppWebPart.js",
+          "manifest": "./src/webparts/toDoApp/ToDoAppWebPart.manifest.json"
+        }
+      ]
     }
   },
   "externals": {},
   "localizedResources": {
     "CalendarWebPartStrings": "lib/webparts/calendar/loc/{locale}.js",
-    "MeetingNotificationApplicationCustomizerStrings": "lib/extensions/meetingNotification/loc/{locale}.js"
+    "MeetingNotificationApplicationCustomizerStrings": "lib/extensions/meetingNotification/loc/{locale}.js",
+    "ToDoAppWebPartStrings": "lib/webparts/toDoApp/loc/{locale}.js"
   }
 }
