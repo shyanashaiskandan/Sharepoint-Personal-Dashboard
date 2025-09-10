@@ -10,6 +10,33 @@
   }
 }
 
+.header {
+  text-align: center;
+}
+
+.headerTitle {
+  display: flex;
+  align-items: center;   
+  gap: 10px;             
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.calendarIcon {
+  font-size: 35px;
+  color: blue;
+}
+
+.event {
+  font-size: 15px;
+  padding: 10px;
+}
+
+.event div {
+  margin-bottom: 6px;
+}
+
+
 .welcome {
   text-align: center;
 }

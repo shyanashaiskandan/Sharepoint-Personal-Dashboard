@@ -12,13 +12,14 @@ export default class Calendar extends React.Component<ICalendarProps, { meetings
 
   public componentDidMount(): void {
     const start = new Date();
-    const end = new Date(Date.now() + 24 * 60 * 60 * 1000); // next 24 hours
+    const end = new Date(Date.now() + 24 * 60 * 60 * 1000);
 
     this.props.context.msGraphClientFactory
       .getClient('3')
       .then((client: MSGraphClientV3): void => {
         client
           .api('/me/calendarView')
+          .header("Prefer", 'outlook.timezone="America/Toronto"')
           .query({
             startDateTime: start.toISOString(),
             endDateTime: end.toISOString()
@@ -37,17 +38,39 @@ export default class Calendar extends React.Component<ICalendarProps, { meetings
   public render(): React.ReactElement<ICalendarProps> {
     return (
       <section className={styles.calendar}>
-        <Icon iconName="Calendar" />
-        <h3>Upcoming Meetings (next 24h)</h3>
+        <div className={styles.header}>
+          <h3 className={styles.headerTitle}>
+            <Icon iconName="Calendar" className={styles.calendarIcon} />
+            UPCOMING MEETINGS
+          </h3>
+        </div>
         {this.state.meetings.length === 0 && <div>No meetings found.</div>}
-        <ul>
           {this.state.meetings.map(m => (
-            <li key={m.id}>
-              <strong>{m.subject || '(No subject)'}</strong><br />
-              {new Date(m.start.dateTime).toLocaleString()} – {new Date(m.end.dateTime).toLocaleString()}
-            </li>
+            <div key={m.id} className={styles.event}>
+              <div>
+              <strong>{m.subject || '(No subject)'}</strong>
+              </div>
+              <div>
+                {new Date(String(m.start.dateTime)).toLocaleDateString("en-US", {
+                  weekday: "short", 
+                  month: "short",   
+                  day: "numeric",   
+                  year: "numeric"   
+                })} 
+              </div>
+              <div>
+                {new Date(String(m.start.dateTime)).toLocaleTimeString("en-US", {
+                  hour: "numeric",
+                  minute: "2-digit"
+                })}
+                –
+                {new Date(String(m.end.dateTime)).toLocaleTimeString("en-US", {
+                  hour: "numeric",
+                  minute: "2-digit"
+                })}
+                </div>
+            </div>
           ))}
-        </ul>
       </section>
     );
   }
