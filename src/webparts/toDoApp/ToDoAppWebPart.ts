@@ -1,9 +1,7 @@
 import * as React from 'react';
 import * as ReactDom from 'react-dom';
 import { Version } from '@microsoft/sp-core-library';
-import {
-  BaseClientSideWebPart
-} from '@microsoft/sp-webpart-base';
+import { BaseClientSideWebPart } from '@microsoft/sp-webpart-base';
 
 import ToDoApp from './components/ToDoApp';
 import { ToDoAppProps } from './components/ToDoAppProps';
@@ -13,7 +11,6 @@ export interface IToDoAppWebPartProps {
 }
 
 export default class ToDoAppWebPart extends BaseClientSideWebPart<IToDoAppWebPartProps> {
-
   public render(): void {
     const element: React.ReactElement<ToDoAppProps> = React.createElement(ToDoApp, {
       description: this.properties.description,
@@ -30,5 +27,4 @@ export default class ToDoAppWebPart extends BaseClientSideWebPart<IToDoAppWebPar
   protected get dataVersion(): Version {
     return Version.parse('1.0');
   }
-
 }
