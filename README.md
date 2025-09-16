@@ -19,6 +19,11 @@ Sharepoint List: <br/>
 Web Part: <br/>
 <img width="600" height="267" alt="Screenshot 2025-09-12 at 10 51 38 AM" src="https://github.com/user-attachments/assets/1f50530b-e73b-4288-b422-57a0950f31ea" /> <br/>
 
+Additional Feature: Option to Add Task
+
+https://github.com/user-attachments/assets/9221d5e2-e7e6-4e26-be16-4ba1073fbf32
+
+<br/>
 
 - **MeetingNotification (Extension)** – Displays a top banner 5 minutes before a meeting starts to remind you to join.
 
